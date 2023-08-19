@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Tan Yong Hong</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .header {
+            background-color: #252839;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner_head {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+            .container h1 {
+                flex-grow: 0;
+                color: white;
+                font-size: 32px;
+                margin: 10px 0;
+            }
+
+        .title-link {
+            color: white;
+            margin-left: 10%;
+            text-decoration: none;
+        }
+
+        .summary-link {
+            margin-right: 10%;
+            font-size: 16px;
+            color: white;
+            width: 150px;
+            text-align: right;
+            text-decoration: none;
+        }
+
+        .biography {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+            .biography .biography_container {
+                width: 65%;
+                background: #fff;
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+
+            .biography .biography_profile img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+
+            .biography .biography_content {
+                padding: 0 25px;
+            }
+
+            .biography .title {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+        .biography_stuff {
+            padding: 25px 0;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .biography ul li {
+            display: flex;
+            margin-bottom: 10px;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+            .biography ul li .icon {
+                width: 35px;
+                height: 35px;
+                background: #2c3e50;
+                color: #fff;
+                border-radius: 50%;
+                margin-right: 20px;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        .biography .biography_skill ul li .skill_name {
+            flex: 1;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .biography .biography_skill ul li .skill_progress {
+            flex: 3;
+            margin: 0 10px;
+            height: 10px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .biography .biography_skill ul li .skill_per {
+            flex: 1;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        .biography .biography_skill ul li .skill_progress span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body style="background: #252839;">
+    <!-- HEADER -->
+    <div class="header">
+        <div class="inner_head">
+            <div class="container">
+                <a href="Revised.html" class="title-link"><h1>BIOGRAPHY</h1></a>
+                <a href="Profile_Summary.html" class="summary-link">Profile Summary</a>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER -->
+    <!------------------------------- CONTENT -------------------------------->
+    <div class="biography">
+        <div class="biography_container">
+            <div class="biography_profile" style="display: flex; justify-content: center; align-items: center;">
+                <img src="ME.jpg" />
+            </div>
+            <div class="biography_content">
+                <div class="biography_stuff" style="text-align: left;">
+                    <div class="title">
+                        <p class="bold">Tan Yong Hong</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div style="display: flex; align-items: center;">
+                                <div class="icon">
+                                    <i class="fa fa-map-marker"></i>
+                                </div><div>Jalan sunsuria, Sepang, 43900</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="display: flex; align-items: center;">
+                                <div class="icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div><div><em>+01023456789</em></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="display: flex; align-items: center;">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div><div>SWE2002122@xmu.edu.my</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="display: flex; align-items: center;">
+                                <div class="icon">
+                                    <i class="fa fa-address-card"></i>
+                                </div><div><strong>MALAYSIA</strong></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="biography_stuff biography_skill">
+                    <div class="title">
+                        <p class="bold">Taken Courses</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="skill_name">HTML</div>
+                            <div class="skill_progress">
+                                <span style="width: 100%;"></span>
+                            </div>
+                            <div class="skill_per">100%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">CSS</div>
+                            <div class="skill_progress">
+                                <span style="width: 85%;"></span>
+                            </div>
+                            <div class="skill_per">85%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">C++</div>
+                            <div class="skill_progress">
+                                <span style="width: 90%;"></span>
+                            </div>
+                            <div class="skill_per">90%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">JS</div>
+                            <div class="skill_progress">
+                                <span style="width: 60%;"></span>
+                            </div>
+                            <div class="skill_per">60%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">Python</div>
+                            <div class="skill_progress">
+                                <span style="width: 80%;"></span>
+                            </div>
+                            <div class="skill_per">80%</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="biography_stuff">
+                    <div class="title">
+                        <p class="bold">About</p>
+                    </div>
+                    <p class="semi-bold" style="text-align:justify; width:50%; margin-left: 25%;">I'm currently a Year 3 Sem 2 Software Engineering in Xiamen University Malaysia. Nice to meet you, if you have interest hanging out with me, please contact me. Thank you. Click below to navigate to my FB, instagram, and emails links.</p>
+                    <div class="SocialIcon" style="margin-top: 20px;">
+                        <ul style="display: flex; justify-content: center; gap: 10px; list-style: none;">
+                            <li>
+                                <a href="https://www.facebook.com/clover.tyh.3/" target="_blank">
+                                    <ion-icon name="logo-facebook" style="font-size: 24px;"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/__cadis/" target="_blank">
+                                    <ion-icon name="logo-instagram" style="font-size: 24px;"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:SWE2002122@xmu.edu.my" target="_blank">
+                                    <ion-icon name="mail-outline" style="font-size: 24px;"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
